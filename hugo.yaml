@@ -39,11 +39,6 @@ menu:
       url: "https://github.com/devopsrunner"
       params:
         icon: github
-    - name: Twitter
-      weight: 7
-      url: "https://twitter.com/devopsrunner"
-      params:
-        icon: x-twitter
 
 params:
   navbar:
