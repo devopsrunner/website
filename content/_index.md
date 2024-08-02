@@ -3,11 +3,13 @@ title: DevOps Runner
 toc: false
 ---
 
-This is the landing page.
+Добро пожаловать на devopsrunner.ru!
 
-## Explore
+Наша миссия - помочь вам внедрить лучшие практики DevOps для улучшения процессов разработки и эксплуатации.
+
+## Изучить
 
 {{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
+  {{< card link="docs" title="Документация" icon="book-open" >}}
+  {{< card link="about" title="О проекте" icon="user" >}}
 {{< /cards >}}
