@@ -1,6 +1,25 @@
 # Hugo configuration file
 title: DevOps Runner
 
+baseURL: "https://devopsrunner.ru/"
+
+enableRobotsTXT: true
+enableGitInfo: true
+# enableEmoji: false
+hasCJKLanguage: true
+canonifyURLs: true
+
+defaultContentLanguage: ru
+# languages:
+#   ru:
+#     languageName: Russian
+#     weight: 1
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
 # import hextra as module
 module:
   imports:
@@ -41,14 +60,29 @@ menu:
         icon: github
 
 params:
+  theme:
+    default: system # light | dark | system
+    displayToggle: true
   navbar:
     displayTitle: true
     displayLogo: false
-
   footer:
-    displayCopyright: false
-    displayPoweredBy: true
-
+    displayCopyright: true
+    displayPoweredBy: false
   editURL:
     enable: true
     base: "https://github.com/devopsrunner/website/edit/main/content"
+  page:
+    width: wide # full (100%), wide (90rem), normal (1280px)
+  # Search
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      index: content # index page by: content | summary | heading | title
+      tokenize: forward # full | forward | reverse | strict
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
