@@ -10,6 +10,7 @@ toc: false
 ## Изучить
 
 {{< cards >}}
-  {{< card link="docs" title="Статьи" icon="book-open" >}}
+  {{< card link="docs" title="Документация" icon="book-open" >}}
+  {{< card link="posts" title="Статьи" icon="book-open" >}}
   {{< card link="about" title="О проекте" icon="user" >}}
 {{< /cards >}}
