@@ -1,5 +1,5 @@
 ---
-title: Статьи
+title: Документация
 next: first-page
 ---
 
