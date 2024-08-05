@@ -61,7 +61,20 @@ menu:
       url: "https://github.com/devopsrunner"
       params:
         icon: github
-
+  sidebar:
+    - identifier: more
+      name: Еще
+      params:
+        type: separator
+      weight: 1
+    - identifier: discussions
+      name: "🌐 Обсуждения ↗"
+      url: "https://github.com/devopsrunner/website/discussions"
+      weight: 2
+    - identifier: issues
+      name: "🌐 Проблемы ↗"
+      url: "https://github.com/devopsrunner/website/issues"
+      weight: 3
 params:
   theme:
     default: system # light | dark | system
