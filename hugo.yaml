@@ -38,19 +38,22 @@ markup:
 menu:
   main:
     - name: Статьи
-      pageRef: /docs
+      pageRef: /posts
       weight: 1
     - name: Блог
       pageRef: /blog
       weight: 2
+    - name: Документация
+      pageRef: /docs
+      weight: 3
     - name: О проекте
       pageRef: /about
-      weight: 3
-    - name: Контакты ↗
-      url: "https://github.com/devopsrunner"
       weight: 4
-    - name: Поиск
+    - name: Сообщество ↗
+      url: "https://github.com/devopsrunner"
       weight: 5
+    - name: Поиск
+      weight: 6
       params:
         type: search
     - name: GitHub
