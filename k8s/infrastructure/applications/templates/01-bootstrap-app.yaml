@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bootstrap-app
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: infrastructure
+  source:
+    repoURL: {{ .Values.source.repoURL }}
+    targetRevision: main
+    path: k8s/infrastructure/charts/bootstrap-app
+    helm:
+      values: |
+        ingressNginx:
+          enabled: true
+          version: 4.2.3
+          namespace: ingress-nginx
+
+  destination:
+    # The namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace
+    namespace: argocd
+    server: https://kubernetes.default.svc
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    retry:
+      limit: -1  # unlimited

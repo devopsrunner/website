@@ -1,0 +1,8 @@
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+
+ingressNginx:
+  enabled: false
+  version: 4.2.2
+  namespace: kube-system

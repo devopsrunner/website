@@ -1,0 +1,5 @@
+source:
+  repoURL: git@gitlab.com:example/example.git
+  targetRevision: main
+
+bootstrapApp: {}
