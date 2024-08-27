@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-app
+  name: bootstrap-application
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
