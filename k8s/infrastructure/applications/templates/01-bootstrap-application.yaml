@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: {{ .Values.source.repoURL }}
     targetRevision: main
-    path: k8s/infrastructure/charts/bootstrap-app
+    path: k8s/infrastructure/charts/bootstrap-application
     helm:
       values: |
         ingressNginx:
